@@ -1,0 +1,43 @@
+/* banquet.css */
+@import './global.css';
+
+.banquet-page {
+  animation: fadeIn 0.7s ease-in-out;
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.banquet-page h1 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-family: 'Playfair Display', serif;
+}
+
+.banquet-page p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.banquet-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.banquet-images img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform var(--transition-duration) ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.banquet-images img:hover {
+  transform: scale(1.04);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

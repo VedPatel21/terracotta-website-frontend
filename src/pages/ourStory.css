@@ -1,0 +1,33 @@
+/* ourStory.css */
+@import './global.css';
+
+.our-story {
+  animation: fadeIn 0.7s ease-in-out;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.our-story h1 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-family: 'Playfair Display', serif;
+}
+
+.our-story p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.story-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
