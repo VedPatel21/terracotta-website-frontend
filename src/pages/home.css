@@ -49,7 +49,7 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.4); /* Reduced opacity for more transparency */
   padding: 2.5rem;
   border-radius: 10px;
   animation: slideUp 1s ease forwards;
